@@ -26,9 +26,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            //기본모드 뷰(라이트)
+            //라이트 모드 뷰
             ContentView()
                 .environment(\.colorScheme, .light)
+            //다크 모드 뷰
+            ContentView()
+                .environment(\.colorScheme, .dark)
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 12"))
+                .previewDisplayName("iPhone 12")
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPhone 12 Por Max"))
+                .previewDisplayName("iPhone 12 Pro Max")
             
         }
         
