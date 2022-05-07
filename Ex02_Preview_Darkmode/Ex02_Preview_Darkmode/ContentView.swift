@@ -12,9 +12,9 @@ struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
         
-        Text("Hello, world!")
+        Text("liaht, dark mode")
             //콘텐츠 여백
-            .padding(.all, 30.0)
+            .padding(.all, 50.0)
             //배경색상
             .background(colorScheme == .light ? Color.white : Color.black)
             //콘텐츠 색상
@@ -43,3 +43,4 @@ struct ContentView_Previews: PreviewProvider {
         
     }
 }
+
